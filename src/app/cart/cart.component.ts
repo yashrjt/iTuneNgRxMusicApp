@@ -23,7 +23,7 @@ export class CartComponent implements OnInit, OnDestroy {
   constructor(private store: Store<fromRoot.State>, private route: Router) { }
 
   ngOnInit() {
-    this.store.pipe(
+    /*this.store.pipe(
       select(fromCart.getCartItems),
       takeWhile(() => this.componentActive)
     ).subscribe(
@@ -31,7 +31,8 @@ export class CartComponent implements OnInit, OnDestroy {
     );
     this.price = this.items.map(x => x.trackPrice).reduce((acc, currentValue) =>
       acc + currentValue);
-    console.log('price:', this.price);
+    console.log('price:', this.price);*/
+
 
   }
 

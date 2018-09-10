@@ -25,8 +25,7 @@ export class MusicListComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.p = this.page;
-
-  }
+     }
   ngOnChanges() {
     this.total = this.music.length / 10;
     console.log('total', this.total);

@@ -9,7 +9,7 @@ export enum CartActionTypes {
 
 export class AddToCart implements Action {
   readonly type = CartActionTypes.AddToCart;
-  constructor(public payload: any) { }
+  constructor(public  payload: any) { }
 }
 export class ClearCart implements Action {
   readonly type = CartActionTypes.ClearCart;

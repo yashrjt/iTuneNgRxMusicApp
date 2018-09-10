@@ -37,6 +37,7 @@ ngOnDestroy() {
     this.componentActive = false;
 }
 addToCart(val) {
+    console.log('Value:',val);
     this.store.dispatch(new CartActions.AddToCart(val));
     alert(val.trackName + ' added to cart');
 }
